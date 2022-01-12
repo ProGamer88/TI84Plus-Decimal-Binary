@@ -1,1 +1,1 @@
-# TI84Plus-Digital-Binary
+# TI84Plus-Decimal-Binary
