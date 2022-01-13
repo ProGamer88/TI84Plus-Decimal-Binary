@@ -4,17 +4,11 @@
 //(->)is store, is right above the on button
 //Ans is 2nd negative
 
-:ClrHome
 :Input A
-:Lbl A
+:While A>0
 :remainder(A,2->C
 :A/2-C/2->A
-:C(10^B)+D->C
-:Ans->D
+:C(10^B)+D->D
 :B+1->B
-:If A>0
-:Then
-:Goto A
-:Else
-:Disp C
-:Pause
+:End
+:Disp D
