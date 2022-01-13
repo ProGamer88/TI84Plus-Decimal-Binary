@@ -4,47 +4,11 @@
 //(->)is store, is right above the on button
 //Ans is 2nd negative
 
-:ClrHome
 :Input A
-:Lbl A
+:While A>0
 :remainder(A,10->C
 :A/10-C/10->A
-:C(2^B)+D->C
-:Ans->D
+:C(2^B)+D->D
 :B+1->B
-:If A>0
-:Then
-:Goto A
-:Else
-:Disp C
-:Pause
-
-//This is the simplest form of this code,
-//Any number over 111111111111 will 
-//give an error message, I put this for
-//the code I made to make it easier to use:
-//111111111111 is 12 ones btw
-
-:ClrHome
-:Input A
-:If A>111111111111
-:Then
-:Goto B
-:Else
-:Lbl A
-:remainder(A,10->C
-:A/10-C/10->A
-:C(2^B)+D->C
-:Ans->D
-:B+1->B
-:If A>0
-:Then
-:Goto A
-:Else
-:Disp C
-:Pause
-:Goto C
-:Lbl B
-:Disp "PLEASE ENTER A"
-:Disp "NUMBER LESS THAN"
-:Disp "1000000000000"
+:End
+:Disp D
